@@ -49,18 +49,18 @@ async def _(event):
     try:
         dc_id, location = get_input_location(replied_user.profile_photo)
     except Exception as e:
-        dc_id = "Need a Profile Picture to check **this**"
+        dc_id = "Mi serve un immagine del profilo per **questo**"
         location = str(e)
     caption = """ID: <code>{}</code>
-First Name: <a href='tg://user?id={}'>{}</a>
-🤦‍♂️ Last Name: {}
+Nome: <a href='tg://user?id={}'>{}</a>
+🤦‍♂️ Cognome: {}
 Bio: {}
 DC ID: {}
-Number of PPs: {}
+Numero di Foto: {}
 Restricted: {}
-Verified: {}
+Verificato: {}
 Bot: {}
-Groups in Common: {}
+Grouppi in comune: {}
 """.format(
         user_id,
         user_id,
